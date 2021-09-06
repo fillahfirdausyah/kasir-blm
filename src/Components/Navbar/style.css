@@ -1,0 +1,14 @@
+.__navbarWrapper {
+  width: 100%;
+  height: 60px;
+  background-color: #04acab;
+  z-index: 111;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+}
+
+.__navbarBody {
+  display: flex;
+  justify-content: space-evenly;
+}
