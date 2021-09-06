@@ -1,7 +1,7 @@
 .__sideMenu {
   background-color: white;
   position: fixed;
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 
@@ -14,18 +14,31 @@
 }
 
 .__sideMenu_body {
-  padding: 25px;
+  padding: 0 25px;
+  height: 100%;
+  overflow: auto;
+  max-height: 400px;
 }
 
 .__sideMenu_body_productName {
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
+}
+
+.__totalWrapper {
+  width: 40%;
+  height: 200px;
+  padding: 25px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
 }
 
 .__sideMenu_body_total {
   display: flex;
   justify-content: space-between;
-  margin-top: 250px;
 }
 
 .__sideMenu_button {
@@ -34,7 +47,7 @@
   background-color: #04acab;
   text-align: center;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 15px;
   color: white;
   cursor: pointer;
   transition: filter 300ms;
@@ -42,4 +55,16 @@
 
 .__sideMenu_button:hover {
   filter: brightness(1.2);
+}
+
+@media (min-width: 991.98px) {
+  .__totalWrapper {
+    width: 40%;
+  }
+  .__sideMenu {
+    background-color: white;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+  }
 }
