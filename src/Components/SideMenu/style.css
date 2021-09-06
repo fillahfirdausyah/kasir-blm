@@ -1,0 +1,45 @@
+.__sideMenu {
+  background-color: white;
+  position: fixed;
+  width: 30%;
+  height: 100%;
+}
+
+.__sideMenu header {
+  width: 100%;
+  background-color: #04acab;
+  height: 80px;
+  text-align: center;
+  padding: 15px;
+}
+
+.__sideMenu_body {
+  padding: 25px;
+}
+
+.__sideMenu_body_productName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.__sideMenu_body_total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 250px;
+}
+
+.__sideMenu_button {
+  width: 100%;
+  height: 40px;
+  background-color: #04acab;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.__sideMenu_button:hover {
+  filter: brightness(1.2);
+}
