@@ -1,7 +1,7 @@
 .__sideMenu {
   background-color: white;
   position: fixed;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 
@@ -23,11 +23,15 @@
 .__sideMenu_body_productName {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 20px;
+}
+
+.__sideMenu_body_productName h4 {
+  font-weight: 600;
 }
 
 .__totalWrapper {
-  width: 40%;
+  width: 30%;
   height: 200px;
   padding: 25px;
   background-color: white;
@@ -57,7 +61,7 @@
   filter: brightness(1.2);
 }
 
-@media (min-width: 991.98px) {
+@media (max-width: 991.98px) {
   .__totalWrapper {
     width: 40%;
   }
