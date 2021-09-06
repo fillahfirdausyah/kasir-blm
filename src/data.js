@@ -72,3 +72,5 @@ const dataProduct = [
     image: require("./Assets/data/Apple Keyboard.jpg"),
   },
 ];
+
+export default dataProduct;
