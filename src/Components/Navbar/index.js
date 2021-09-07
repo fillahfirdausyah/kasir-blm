@@ -2,17 +2,23 @@ import React from "react";
 import "./style.css";
 
 // Component
-import StarIcon from "@material-ui/icons/Star";
-import ListAltIcon from "@material-ui/icons/ListAlt";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import SearchIcon from "@material-ui/icons/Search";
+import ReceiptRoundedIcon from "@material-ui/icons/ReceiptRounded";
+import SettingsRoundedIcon from "@material-ui/icons/SettingsRounded";
+import PersonRoundedIcon from "@material-ui/icons/PersonRounded";
 
 function Navbar() {
   return (
     <div className="__navbarWrapper">
-      <div className="__navbarBody">
-        <StarIcon fontSize="large" style={{ color: "white" }} />
-        <ListAltIcon fontSize="large" style={{ color: "white" }} />
-        <AttachMoneyIcon fontSize="large" style={{ color: "white" }} />
+      <div></div>
+      <div className="__navbarSearch">
+        <input type="text" placeholder="cari..." />
+        <SearchIcon className="__navbarSearchIcon" />
+      </div>
+      <div className="__navbarUserSection">
+        <ReceiptRoundedIcon className="__navbarUserSectionIcon" />
+        <SettingsRoundedIcon className="__navbarUserSectionIcon" />
+        <PersonRoundedIcon className="__navbarUserSectionIcon" />
       </div>
     </div>
   );

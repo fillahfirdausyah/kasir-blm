@@ -1,74 +1,125 @@
 .__sideMenu {
-  background-color: white;
   position: fixed;
-  width: 30%;
+  left: 0;
+  top: 0;
+  width: 300px;
   height: 100%;
+  background-color: white;
+  padding: 10px 15px 0 15px;
+  overflow-x: hidden;
 }
 
-.__sideMenu header {
-  width: 100%;
-  background-color: #04acab;
-  height: 80px;
-  text-align: center;
-  padding: 15px;
+.__sideMenu hr {
+  /* margin-top: 60px; */
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: rgb(161, 161, 161); /* old IE */
+  background-color: rgb(216, 216, 216); /* Modern Browsers */
+}
+
+.__sideMenu header h2 {
+  font-weight: 500;
 }
 
 .__sideMenu_body {
-  padding: 0 25px;
-  height: 100%;
-  overflow: auto;
-  max-height: 400px;
+  margin-top: 25px;
 }
 
-.__sideMenu_body_productName {
+.__sideMenuBodyItemWrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.__sideMenu_body_productName h4 {
+.__sideMenuBodyItemWrapper p.__sideMenuBodyItemQty {
+  font-size: 12px;
+  font-weight: 500;
+  color: #969495;
+}
+
+.__sideMenuBodyItemWrapper p.__sideMenuBodyItemTotal {
+  font-size: 13px;
+  color: #838383;
+}
+
+.__sideMenuBodyItemName h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.__sideMenuBodyItemName p {
+  font-size: 10px;
   font-weight: 600;
+  color: #969495;
+}
+
+.__sideMenuBodyItemImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.63);
+}
+
+.__sideMenuBodyItemImage img {
+  width: 100%;
+  height: auto;
 }
 
 .__totalWrapper {
-  width: 30%;
-  height: 200px;
-  padding: 25px;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  border-top: 1px solid black;
+  margin-top: 20px;
 }
 
 .__sideMenu_body_total {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.__sideMenuBodySubTotal {
+  font-weight: 600;
+  font-size: 12px;
+  color: #838383;
+}
+
+.__sideMenuBodyTotal {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.__sideMenuBodypajak {
+  font-weight: 600;
+  font-size: 12px;
+  color: #838383;
 }
 
 .__sideMenu_button {
-  width: 100%;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 250px;
+  height: 50px;
   background-color: #04acab;
-  text-align: center;
-  padding: 10px;
-  margin-top: 15px;
   color: white;
+  border-radius: 40px;
   cursor: pointer;
   transition: filter 300ms;
 }
 
-.__sideMenu_button:hover {
-  filter: brightness(1.2);
+.__sideMenu_button p {
+  font-weight: 500;
 }
 
-@media (max-width: 991.98px) {
-  .__totalWrapper {
-    width: 40%;
-  }
-  .__sideMenu {
-    background-color: white;
-    position: fixed;
-    width: 40%;
-    height: 100%;
-  }
+.__sideMenu_button p span {
+  color: #dbdbdb;
+}
+
+.__sideMenu_button:hover {
+  filter: brightness(1.1);
 }
