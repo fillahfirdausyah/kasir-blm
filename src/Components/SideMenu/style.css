@@ -9,6 +9,23 @@
   overflow-x: hidden;
 }
 
+.__sideMenu header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.__sideMenu header .__iconEditWrappper {
+  background-color: #04acab;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
 .__sideMenu hr {
   /* margin-top: 60px; */
   border: none;
@@ -98,6 +115,17 @@
   color: #838383;
 }
 
+.__iconDeleteWrapper {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
 .__sideMenu_button {
   display: flex;
   align-items: center;
@@ -122,4 +150,19 @@
 
 .__sideMenu_button:hover {
   filter: brightness(1.1);
+}
+
+.cart-enter {
+  opacity: 0;
+}
+.cart-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.cart-exit {
+  opacity: 1;
+}
+.cart-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
