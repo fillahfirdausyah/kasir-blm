@@ -24,6 +24,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.__sideMenu header .__iconEditWrappper:hover {
+  filter: brightness(1.1);
 }
 
 .__sideMenu hr {
@@ -124,6 +130,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.__iconDeleteWrapper:hover {
+  filter: brightness(1.5);
 }
 
 .__sideMenu_button {
@@ -135,7 +147,7 @@
   height: 50px;
   background-color: #04acab;
   color: white;
-  border-radius: 40px;
+  border-radius: 15px;
   cursor: pointer;
   transition: filter 300ms;
 }

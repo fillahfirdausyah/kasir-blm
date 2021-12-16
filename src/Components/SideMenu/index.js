@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Recta from "recta";
 
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteForeverRoundedIcon from "@material-ui/icons/DeleteForeverRounded";
@@ -11,37 +12,56 @@ function SideMenu({ items }) {
   const [pajak, setPajak] = useState(0);
   const [isEdit, setIsEdit] = useState(false);
 
-  useEffect(() => {
-    let totalPrice = 0;
-    for (let i of items) {
-      totalPrice += i.price;
-    }
-    setTotal(totalPrice);
-    setPajak(items.length * 1.5);
-  }, [items]);
+  // useEffect(() => {
+  //   let totalPrice = 0;
+  //   for (let i of items) {
+  //     totalPrice += i.price;
+  //   }
+  //   setTotal(totalPrice);
+  //   setPajak(items.length * 1.5);
+  // }, [items]);
 
-  const editHandler = () => {
-    if (isEdit) {
-      setIsEdit(false);
-    } else {
-      setIsEdit(true);
-    }
+  // const editHandler = () => {
+  //   if (isEdit) {
+  //     setIsEdit(false);
+  //   } else {
+  //     setIsEdit(true);
+  //   }
+  // };
+
+  const testPrint = () => {
+    let printer = new Recta("4840749736", "1811");
+    printer.open().then(() => {
+      printer
+        .align("center")
+        .text("Hello World !!")
+        .bold(true)
+        .text("This is bold text")
+        .bold(false)
+        .underline(true)
+        .text("This is underline text")
+        .underline(true)
+        .barcode("CODE39", "123456789")
+        .feed(8)
+        .cut(true)
+        .print();
+    });
   };
 
   return (
     <div className="__sideMenu">
       <header>
         <h2>Produk</h2>
-        {items.length > 0 ? (
+        {/* {items.length > 0 ? (
           <div className="__iconEditWrappper" onClick={editHandler}>
             <EditIcon />
           </div>
         ) : (
           ""
-        )}
+        )} */}
       </header>
       <div className="__sideMenu_body">
-        <TransitionGroup className="cart-item">
+        {/* <TransitionGroup className="cart-item">
           {items.map((x, index) => (
             <CSSTransition key={index} timeout={500} classNames="cart">
               <div key={index} className="__sideMenuBodyItemWrapper">
@@ -68,7 +88,7 @@ function SideMenu({ items }) {
               </div>
             </CSSTransition>
           ))}
-        </TransitionGroup>
+        </TransitionGroup> */}
       </div>
       <hr />
       <div className="__totalWrapper">
@@ -80,7 +100,7 @@ function SideMenu({ items }) {
           <p className="__sideMenuBodySubTotal">Pajak</p>
           <p className="__sideMenuBodypajak">${pajak}</p>
         </div>
-        <div className="__sideMenu_button">
+        <div className="__sideMenu_button" onClick={testPrint}>
           <p>
             Charge <span>${total + pajak}</span>
           </p>
