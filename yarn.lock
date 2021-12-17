@@ -9636,6 +9636,11 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
+recta-clones@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/recta-clones/-/recta-clones-1.0.2.tgz#1e0d1ad0c8cc13e369bd8ca65e9e35f20612c869"
+  integrity sha512-3UTKMwb4G9TcZMMm6wpZUT2ABspyEXzWCbWjb9QVaDrIiUG75O/qSk8h/veEWtcZeU4QUSqkvPl1UJqdPATLbA==
+
 recta@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/recta/-/recta-1.0.0.tgz#909616b424560be3f898d91a5796bdc3d9024438"

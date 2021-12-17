@@ -21,7 +21,7 @@ function HomePage() {
 
   return (
     <div className="__homePage">
-      <SideMenu />
+      <SideMenu items={items} />
       <div className="__contentWrapper">
         <Navbar getItems={getItems} />
         {/* <GridMenu getItems={getItems} /> */}

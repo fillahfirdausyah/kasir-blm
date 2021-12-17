@@ -19,6 +19,7 @@
     "react-spinners": "^0.11.0",
     "react-transition-group": "^4.4.2",
     "recta": "^1.0.0",
+    "recta-clones": "^1.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

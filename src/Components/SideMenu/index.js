@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Recta from "recta";
+import Recta from "recta-clones";
 
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteForeverRoundedIcon from "@material-ui/icons/DeleteForeverRounded";
@@ -34,16 +34,41 @@ function SideMenu({ items }) {
     printer.open().then(() => {
       printer
         .align("center")
-        .text("Hello World !!")
         .bold(true)
-        .text("This is bold text")
+        .underline(false)
+        .text("TINUQU")
+        .newline()
         .bold(false)
+        .text("Sumberejo - Malang")
+        .newline()
+        .text("08212383483472")
+        .newline()
+        .newline()
+        .newline()
+        // .align("left")
+        .text("09 Desember 2021                       14:17:58")
+        .newline()
+        .text("Nomor Invoice         INV/20211109/Q21758/9D8QY")
+        .newline()
+        .text("Nama Kasir                                 Vina")
+        .newline()
+        .newline()
+        .underline(2)
+        .text("-----------------------------------------------")
+        .newline()
+        .align("center")
+        .underline(false)
+        .text("Daftar Pembelian")
+        .newline()
         .underline(true)
-        .text("This is underline text")
-        .underline(true)
-        .barcode("CODE39", "123456789")
+        .text("-----------------------------------------------")
+        .newline()
+        .newline()
+        .underline(false)
+        .text("Kerudung Kantong Fendi JU  x1          Rp.35.000")
+        .text("Celana Legging List Fendi  x1          Rp.25.000")
         .feed(8)
-        .cut(true)
+        .cut()
         .print();
     });
   };
