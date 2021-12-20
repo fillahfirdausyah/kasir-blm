@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import HomePage from "./Pages/Homepage";
+import Router from "./Route";
 
 function App() {
   useEffect(() => {
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <HomePage />
+      <Router />
     </div>
   );
 }
