@@ -1,4 +1,9 @@
 .__contentWrapper {
   margin-left: 300px;
+  overflow: hidden;
+}
+.__contentWrapper .container .thetable {
   /* background-color: #f4f4f4; */
+  position: relative;
+  /* top: -190px; */
 }

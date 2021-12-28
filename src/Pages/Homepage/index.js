@@ -26,30 +26,32 @@ function HomePage() {
         <Navbar getItems={getItems} />
         {/* <GridMenu getItems={getItems} /> */}
         <div className="container">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Nama Item</th>
-                <th scope="col">Harga</th>
-                <th scope="col">Jumlah</th>
-                <th scope="col">Subtotal</th>
-                <th scope="col">Hapus</th>
-              </tr>
-            </thead>
-            <tbody>
-              {items.map((x) => (
-                <tr key={x.id}>
-                  <td>{x.title}</td>
-                  <td>{x.price}</td>
-                  <td>1</td>
-                  <td>{1}</td>
-                  <td>
-                    <DeleteForeverIcon />
-                  </td>
+          <div className="thetable">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nama Item</th>
+                  <th scope="col">Harga</th>
+                  <th scope="col">Jumlah</th>
+                  <th scope="col">Subtotal</th>
+                  <th scope="col">Hapus</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {items.map((x) => (
+                  <tr key={x.id}>
+                    <td>{x.title}</td>
+                    <td>{x.price}</td>
+                    <td>1</td>
+                    <td>{1}</td>
+                    <td>
+                      <DeleteForeverIcon />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
